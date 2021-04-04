@@ -57,7 +57,7 @@
    python main.py
    ```
 
-## Start on boot
+## Start on boot with Raspberry PI
 
 ```shell
 $ cat /etc/systemd/system/photo_frame_trigger.service
@@ -72,7 +72,7 @@ User=pi
 WorkingDirectory=/home/pi
 Restart=always
 RestartSec=2
-ExecStart=/home/pi/photo_frame_clock/kivy_venv/bin/python /home/pi/photo_frame_$
+ExecStart=/home/pi/photo_frame_clock/kivy_venv/bin/python /home/pi/photo_frame_clock/main.py
 NoNewPrivileges=true
 StandardOutput=syslog
 StandardError=syslog
