@@ -1,3 +1,4 @@
 .vscode
 kivy_venv
 __pycache__
+asset/.

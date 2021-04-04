@@ -31,22 +31,22 @@
    . kivy_venv/bin/activate
    ```
 
-1. Install dependencies
-
-   ```shell
-   pip3 install -r requirement.txt
-   ```
-
 1. Install kivy
 
    ```shell
    python3 -m pip install kivy[base] kivy_examples
    ```
 
+1. Install dependencies
+
+   ```shell
+   pip3 install -r requirement.txt
+   ```
+
 1. Start application
 
    ```shell
-   sh start.sh
+   python main.py
    ```
 
 ## Start on boot
