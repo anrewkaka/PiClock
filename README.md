@@ -43,6 +43,14 @@
    pip3 install -r requirement.txt
    ```
 
+1. Change picture folder
+
+   Find the row bellow in the file `main.py` and change to the real path of picutre directory
+
+   ```python
+   path = 'asset' #TODO: change directory path
+   ```
+
 1. Start application
 
    ```shell
@@ -51,7 +59,7 @@
 
 ## Start on boot
 
-```sh
+```shell
 $ cat /etc/systemd/system/photo_frame_trigger.service
 [Unit]
 Description=Start the Photo Frame app
@@ -73,7 +81,7 @@ StandardError=syslog
 WantedBy=multi-user.target
 ```
 
-```sh
+```shell
 $ systemctl daemon-reload
 $ systemctl enable photo_frame_trigger.service
 $ sudo reboot

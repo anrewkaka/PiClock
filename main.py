@@ -24,7 +24,7 @@ class MainApp(App):
         self.rootLayout = RootLayout()
         Clock.schedule_interval(self.refreshTime, 1.0)
 
-        path = 'asset'
+        path = 'asset' #TODO: change directory path
         self.files = []
         # r=root, d=directories, f = files
         for r, d, f in os.walk(path):
