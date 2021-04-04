@@ -1,0 +1,31 @@
+#:kivy 1.11.1
+#:import F kivy.factory.Factory
+
+<BackgroundColor@Widget>
+  background_color: 1, 1, 1, 1
+  canvas.before:
+    Color:
+      rgba: root.background_color
+    Rectangle:
+      size: self.size
+      pos: self.pos
+
+<BackgroundLabel@Label+BackgroundColor>
+  background_color: 1, 1, 1, 0.15
+
+<RootLayout>:
+  AnchorLayout:
+    anchor_X: 'center'
+    anchor_y: 'center'
+    Image:
+      id: imgMain
+    BoxLayout:
+      orientation: 'vertical'
+      BackgroundLabel:
+        id: txtDate
+        font_size: 80
+        color: [1.0, 0.0, 0.0, 0.8]
+      BackgroundLabel:
+        id: txtTime
+        font_size: 180
+        color: [1.0, 0.0, 0.0, 0.9]
